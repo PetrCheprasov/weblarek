@@ -1,4 +1,6 @@
-import { IProduct } from "../../../types";
+import { IProduct } from "../../types/index.ts";
+import { eventsList } from "../../utils/constants.ts";
+import { IEvents } from "../base/Events.ts";
 
 export class Cart {
   protected cartItems: Set<IProduct>;

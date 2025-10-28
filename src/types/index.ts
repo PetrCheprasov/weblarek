@@ -6,11 +6,11 @@ export interface IApi {
 }
 
 //Connection api interfaces 
-export interface IOrder {
+export interface ISuccessOrder {
     id: string;
     total: number;
 }
-export interface IOrderErr { err: string }
+export interface IErrors { err: string }
 
 export interface IpostProducts extends IBuyer {
     total: number;
@@ -37,4 +37,12 @@ export interface IBuyer {
     address: string,
     email: string,
     phone: string,
+}
+
+export interface IProductCart extends IProduct {
+    inCart: boolean
+}
+
+export interface IElementsList {
+    elementsList: HTMLElement[];
 }

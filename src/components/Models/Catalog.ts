@@ -1,4 +1,6 @@
-import { IProduct } from "../../../types";
+import { IProduct } from "../../types/index.ts";
+import { eventsList } from "../../utils/constants.ts";
+import { IEvents } from "../base/Events.ts";
 
 export class Catalog {
   protected products: IProduct[]
@@ -25,7 +27,7 @@ export class Catalog {
     return this.pickedProduct;
   }
 
-  public setPickedProduct(product: IProduct): void {
+  public setPickedProduct(product: IProduct | null): void {
     this.pickedProduct = product;
   }
 }

@@ -17,6 +17,37 @@ export const categoryMap = {
 };
 
 export const settings = {
-
+  
 };
 
+export enum eventsList {
+    'products:changed' = 'products:changed',
+    'product:setted' = 'product:setted',
+    'cart:changed' = 'cart:changed',
+    'payMethod:added' = 'payMethod:added',
+    'product:deleteToCart' = 'product:deleteToCart',
+    'product:selected' = 'product:selected',
+    'modal:noScroll' = 'modal:noScroll',
+    'product:actionWithCart' = 'product:actionWithCart',
+    'form:order' = 'form:order',
+    'email:added' = 'email:added',
+    'phone:added' = 'phone:added',
+    'address:added' = 'address:added',
+    'contacts:checkData' = 'contacts:checkData',
+    'contacts:submit' = 'contacts:submit',
+    'payMethod:chosen' = 'payMethod:chosen',
+    'order:checkData' = 'order:checkData',
+    'order:submit' = 'order:submit',
+    'cart:opened' = 'cart:opened',
+    'modal:closed' = 'modal:closed',
+  }
+
+  export const compareCategory = new Map([
+    ['другое', 'other'],
+    ['софт-скил', 'soft'],
+    ['дополнительное', 'additional'],
+    ['хард-скил', 'hard'],
+    ['кнопка', 'button'],
+    ['unknown', 'unknown']
+  ]
+)

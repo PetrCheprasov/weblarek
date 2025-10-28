@@ -1,4 +1,6 @@
-import { IBuyer } from "../../../types"; 
+import { IBuyer, IErrors } from "../../types/index.ts";
+import { eventsList } from "../../utils/constants.ts";
+import { IEvents } from "../base/Events.ts";
 
 export class Buyer { 
   protected buyer: IBuyer = { 
